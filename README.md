@@ -1,3 +1,2 @@
 # Bangkok
-introduction to Bangkok  
-edit test
+introduction to Bangkok
