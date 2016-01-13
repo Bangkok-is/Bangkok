@@ -1,104 +1,259 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <!-- If IE use the latest rendering engine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Set the page to the width of the device and set the zoon level -->
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <title>Welcome to Bangkok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>สถานที่น่าเที่ยวในกรุงเทพมหานคร</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<style type="text/css">
-body {
-  font-size: 62.5%;
-  font-family: arial, sans-serif;
-}
-#logotest{
-  height: 100px;
-  width: 100px;
-}
-#websiteTitle{
-  font-size: 10em;
-  vertical-align: middle;
-  font-family: 'Pacifico', cursive;
-  padding-left: 15px;
-  color: #191970;
-}
-#websiteSlogan{
-  font-size: 5.4em;
-}
-/* Carousel Styling */
-.slide1{
-  background-image: url('bkgrnd1.png');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.slide2{
-  background-image: url('bkgrnd2.png');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.slide3{
-  background-image: url('bkgrnd3.png');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.carousel-caption h1{
-  font-size: 5.4em;
-  font-family: 'Pacifico', cursive;
-  padding-bottom: .4em;
-}
-.carousel-caption p{
-  font-size: 2em;
-}
-</style>
-  </head>
-  <body>
-    <header class="container">
-      <center>
-        <div class="row">
-          <div class="col-lg-12">
-              <span id="websiteTitle">Welcome to Bangkok</span>
-              <p id="websiteSlogan">This site is guide in Bangkok for everyone</p></center>
-          </div>
-        </div>
-    </header>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
 
     <!-- Navigation -->
-    <div class="jumbotron">
-      <center>
-      <div class="btn-group btn-group-lg" role="group">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="ข้อมูลทั่วไป.html">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="วัดและพระราชวัง.html">วัดและพระราชวัง</a>
+                            </li>
+                            <li>
+                                <a href="ห้างสรรพสินค้าและศูนย์การค้า.html">ห้างสรรพสินค้าและศูนย์การค้า</a>
+                            </li>
+                            <li>
+                                <a href="พิพิธภัณฑ์.html">พิพิธภัณฑ์</a>
+                            </li>
+                            <li>
+                                <a href="สถานบันเทิง.html">สถานบันเทิง</a>
+                            </li>
+                            <li>
+                                <a href="สวนสนุก.html">สวนสนุก</a>
+                            </li>
+                            <li>
+                                <a href="สวนสาธารณะ.html">สวนสาธารณะ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="ภัตตาคาร.html">ภัตตาคาร</a>
+                            </li>
+                            <li>
+                                <a href="บุฟเฟ่ต์.html">บุฟเฟ่ต์</a>
+                            </li>
+                            <li>
+                                <a href="ก๋วยเตี๋ยว.html">ก๋วยเตี๋ยว</a>
+                            </li>
+                            <li>
+                                <a href="อาหารซีฟู้ด.html">อาหารซีฟู้ด</a>
+                            </li>
+                            <li>
+                                <a href="ของหวาน.html">ของหวาน</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="โรงแรม.html">โรงแรม</a>
+                            </li>
+                            <li>
+                                <a href="โฮสเทล.html">โฮสเทล</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="การเดินทาง.html">การเดินทาง</a>
+                    </li>
+                    <li>
+                        <a href="แกลลอรี่.html">แกลลอรี่</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-        <button type="button" class="btn btn-defaull">หน้าหลัก</button>
-        <button type="button" class="btn btn-defaull">ข้อมูลทั่วไป</button>
-        <button type="button" class="btn btn-defaull">สถานที่ท่องเที่ยว</button>
-        <button type="button" class="btn btn-defaull">แกลลอรี่</button>
-        <button type="button" class="btn btn-defaull">การเดินทาง</button>
-        <button type="button" class="btn btn-defaull">ที่พัก</button>
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-      </div>
-      </center>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Bangkok
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Modern Business Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v3.2.0</strong>
+                    </li>
+                    <li>jQuery v1.11.0</li>
+                    <li>Font Awesome v4.1.0</li>
+                    <li>Working PHP contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-</p>
+    <!-- /.container -->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
+</body>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-
-  </body>
 </html>
