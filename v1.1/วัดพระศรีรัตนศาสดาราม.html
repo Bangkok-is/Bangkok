@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>สถานที่น่าเที่ยวในกรุงเทพมหานคร</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+    <style>
+    @font-face {
+    font-family: 'Kanit', sans-serif;
+    src: url(sansation_light.woff);
+    font-size: '16px';
+    font-weight: bold;
+    }
+
+    div {
+    font-family: 'Kanit', sans-serif;
+    }
+    </style>
+
+    <!-- map -->
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+    <style type="text/css">
+      #mapDiv {
+        min-height: 100px;
+        max-height: 1000px;
+      }
+    </style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="index.html">หน้าหลัก</a>
+                  </li>
+                  <li>
+                      <a href="ข้อมูลทั่วไป.html">ข้อมูลทั่วไป</a>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                            <a href="พระบรมมหาราชวัง.html">พระบรมมหาราชวัง</a>
+                        </li>
+                        <li>
+                            <a href="ตลาดนัดสวนจตุจักร.html">ตลาดนัดสวนจตุจักร</a>
+                        </li>
+                        <li>
+                            <a href="พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ.html">พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ</a>
+                        </li>
+                        <li>
+                            <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร.html">วัดอรุณราชวราราม ราชวรมหาวิหาร</a>
+                        </li>
+                        <li>
+                            <a href="สวนสัตว์ดุสิตเขาดินวนา.html">สวนสัตว์ดุสิตเขาดินวนา</a>
+                          </li>
+                          <li>
+                              <a href="สวนลุมพินี.html">สวนลุมพินี</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="Chocolate Ville.html">Chocolate Ville</a>
+                          </li>
+                          <li>
+                              <a href="Grill101.html">Grill101 - Urban Grill & Bar</a>
+                          </li>
+                          <li>
+                              <a href="วัฒนาพานิช.html">วัฒนาพานิช ก๋วยเตี๋ยวเนื้อ</a>
+                          </li>
+                          <li>
+                              <a href="Mr. Seafood.html">Mr. Seafood</a>
+                          </li>
+                          <li>
+                              <a href="มนต์นมสด.html">มนต์นมสด</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="โรงแรม.html">โรงแรม</a>
+                          </li>
+                          <li>
+                              <a href="โฮสเทล.html">โฮสเทล</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="การเดินทาง.html">การเดินทาง</a>
+                  </li>
+                  <li>
+                      <a href="แกลลอรี่.html">แกลลอรี่</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+    <!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+<div class="col-lg-12">
+  <h1 class="page-header"> วัดพระศรีรัตนศาสดาราม
+      <small>by <a href="#"> Knf</a>
+      </small>
+  </h1>
+  <ol class="breadcrumb">
+      <li><a href="index.html">Home</a>
+      </li>
+      <li class="active">วัดพระศรีรัตนศาสดาราม</li>
+  </ol>
+</div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+
+<!-- Blog Post Content Column -->
+<div class="col-md-8" style="background-color:lavender;" >
+
+  <!-- Blog Post -->
+
+  <hr>
+
+  <!-- Date/Time -->
+  <p><i class="fa fa-clock-o"></i> Posted on 16 มกราคม 2559 at 17:23 </p>
+
+  <hr>
+
+  <!-- Preview Image -->
+  <center>
+    <img src="http://i.imgur.com/mA6LeCO.jpg"
+    class="img-thumbnail" alt="Cinque Terre" width="640" height="480">
+  </center>
+
+  <hr>
+
+  <!-- Post Content -->
+  <h2>รายละเอียดสถานที่ท่องเที่ยว</h2>
+  <p class="lead">
+    <div class="well well-lg">
+        <b>วัดพระศรีรัตนศาสดาราม</b> วัดพระศรีรัตนศาสดาราม หรือที่เรียกกันทั่วไปว่า วัดพระแก้ว เป็นวัดที่ พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราชโปรดเกล้าฯ ให้สร้างขึ้นใน พ.ศ. 2325 เป็นวัดในพระบรมมหาราชวัง เช่นเดียวกับ วัดพระศรีสรรเพชญ์ ซึ่งเป็นวัดในพระราชวังหลวงในสมัยอยุธยา และมีพระราชประสงค์ให้วัดพระศรีรัตนศาสดารามเป็นที่ประดิษฐาน พระพุทธมหามณีรัตนปฏิมากร หรือพระแก้วมรกต ที่นำมาจากกรุงเวียงจันทน์ และเป็นสถานที่ทรงบำเพ็ญพระราชกุศล วัดพระศรีรัตนศาสดารามเป็นวัดที่ไม่มีพระสงฆ์จำพรรษาอยู่ เพราะมีแต่ส่วนพุทธาวาสไม่มีส่วนสังฆาวาส
+วัดพระศรีรัตนศาสดารามได้รับการบูรณปฏิสังขรณ์มาโดยตลอด การบูรณะครั้งใหญ่ทั้งพระอาราม มีขึ้นในรัชสมัยพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว และในรัชสมัยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว โปรดเกล้าฯ ให้มีการเฉลิมฉลองกรุงรัตนโกสินทร์ครบ 100 ปี ใน พ.ศ. 2425 ต่อมาในรัชสมัยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว โปรดเกล้าฯ ให้มีการบูรณปฏิสังขรณ์ทั้งพระอารามในโอกาสที่มีพระราชพิธีฉลองพระนครครบ 150 ปี ในรัชกาลปัจจุบันโปรดเกล้าฯ ให้บูรณปฏิสังขรณ์ทั้งพระอารามอีกครั้งใน พ.ศ. 2525 เมื่อมีการสมโภชกรุงรัตนโกสินทร์ 200 ปี โดยมีสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารีทรงเป็นองค์ประธานในการบูรณะ
+วัดพระศรีรัตนศาสดารามเป็นวัดที่สำคัญและเป็นที่เชิดหน้าชูตาของบ้านเมือง ตลอดจนเป็นแหล่งท่องเที่ยวที่สำคัญของประเทศ
+
+        <br><b>การเดินทาง:</b> ลง BTS สถานีสะพานตากสินทางออก2 เดินไปทางแม่น้ำเจ้าพระยา ใต้สะพานมีท่าเรือสาทร ลงเรือด่วนเจ้าพระยา ธงสีส้มขึ้นเรือที่ท่าช้าง (N9) เดินออกจากท่าเรือ วัดพระแก้วอยู่ทางขวามือ
+        <br><b>วันเวลาเปิด - ปิด :</b> ทุกวัน 08.30 - 15.30 น.
+      </div>
+
+  <hr>
+
+      </div>
+      <div class="col-md-4" style="background-color:lavender;">
+        <hr>
+        <div class="well well-lg">
+        <center><p><i class="fa fa-3x fa-map-marker"></i> Map</p></center>
+
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!4m6!1m3!3m2!1s0x0:0xe1cce47d89865836!2z4Lin4Lix4LiU4Lie4Lij4Liw4Lio4Lij4Li14Lij4Lix4LiV4LiZ4Lio4Liy4Liq4LiU4Liy4Lij4Liy4LihICjguKfguLHguJTguJ7guKPguLDguYHguIHguYnguKcp!3m1!1s0x0:0xe1cce47d89865836" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- /.row -->
+<hr>
+
+<!-- Footer -->
+<footer>
+<div class="row">
+  <div class="col-lg-12">
+      <p>Copyright &copy; Your Website 2014</p>
+  </div>
+</div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
