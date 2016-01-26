@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <title>Mr. Seafood</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="ข้อมูลทั่วไป">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="พระบรมมหาราชวัง">พระบรมมหาราชวัง</a>
+                          </li>
+                          <li>
+                              <a href="ตลาดนัดสวนจตุจักร">ตลาดนัดสวนจตุจักร</a>
+                          </li>
+                          <li>
+                              <a href="พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ">พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ</a>
+                          </li>
+                          <li>
+                              <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร">วัดอรุณราชวราราม ราชวรมหาวิหาร</a>
+                          </li>
+                          <li>
+                              <a href="สวนสัตว์ดุสิตเขาดินวนา">สวนสัตว์ดุสิตเขาดินวนา</a>
+                            </li>
+                          <li>
+                              <a href="สวนลุมพินี">สวนลุมพินี</a>
+                          </li>
+                          <li>
+                              <a href="วัดพระศรีรัตนศาสดาราม">วัดพระศรีรัตนศาสดาราม</a>
+                          </li>
+                          <li>
+                              <a href="เอ็มบีเคเซ็นเตอร์">เอ็มบีเคเซ็นเตอร์</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Chocolate Ville">Chocolate Ville</a>
+                            </li>
+                            <li>
+                                <a href="Grill101">Grill101 - Urban Grill & Bar</a>
+                            </li>
+                            <li>
+                                <a href="วัฒนาพานิช">วัฒนาพานิช ก๋วยเตี๋ยวเนื้อ</a>
+                            </li>
+                            <li>
+                                <a href="Mr. Seafood">Mr. Seafood</a>
+                            </li>
+                            <li>
+                                <a href="มนต์นมสด">มนต์นมสด</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="โรงแรมแชงกรี-ลา กรุงเทพ">โรงแรมแชงกรี-ลา กรุงเทพ</a>
+                            </li>
+                            <li>
+                                <a href="โรงแรมใบหยก สกาย">โรงแรมใบหยก สกาย</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+<div class="col-lg-12">
+<h1 class="page-header"> Mr. Seafood
+  <small>by <a href="#"> Sir'Poom</a>
+  </small>
+</h1>
+<ol class="breadcrumb">
+  <li><a href="index.html">Home</a>
+  </li>
+  <li class="active">Mr. Seafood</li>
+</ol>
+</div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+
+<!-- Blog Post Content Column -->
+<div class="col-md-8" style="background-color:lavender;">
+
+<!-- Blog Post -->
+
+<hr />
+
+<!-- Date/Time -->
+<p><i class="fa fa-clock-o"></i> Posted on 17 มกราคม 2559 at 17:12 </p>
+
+<hr />
+
+<!-- Preview Image -->
+<center>
+<img src="http://f.ptcdn.info/007/033/000/1435840190-IMG1781-o.jpg" class="img-thumbnail" alt="Cinque Terre" width="640" height="480" />
+</center>
+
+<hr />
+
+<!-- Post Content -->
+<h2>รายละเอียดสถานที่ท่องเที่ยว</h2>
+<p class="lead">
+<div class="well well-lg">
+    <b>Mr. Seafood</b> ตั้งอยู่ย่านหลังศูนย์อาหารมหาวิทยาลัยรามคำแหง ซอยรามคำแหง 127 ตัวร้านเป็นเพิงสูง ๆ ออกแบบให้โปร่งโล่งเหมาะสำหรับเมนูปิ้งย่าง บริการอาหารบุฟเฟ่ต์ทะเลเผาแบบเกรด A ส่วนเมนูอาหารทะเลแนะนำของร้าน ได้แก่ ปูม้า, กุ้งก้ามกราม, กั้ง, หอยไม้ไผ่, หอยชักตีน, หอยหมาก, หอยแมลงภู่, หอยเชลล์,
+     แซลมอน, ปลาหมึกกล้วย, ปลาหมึกอาเจน, ปลาหมึกไข่ และปลาหมึกกระดอง พร้อมบริการเขียงสำหรับหั่นของดิบ นอกจากนี้ยังมีเมนูหมู ,ไก่, ไส้กรอก, หมูยอ และผักชนิดต่าง ๆ ไว้บริการ แถมพร้อมเครื่องดื่มที่เติมได้แบบไม่อั้น ทั้งเหล้าและเบียร์ให้ได้จิบแบบฟิน ๆ ไปกับการทานอาหารทะเลได้เป็นอย่างดี
+    <br />
+    <br /><b>ราคา :</b> 399 บาท (เด็กสูงไม่เกิน 100 เซนติเมตร ทานฟรี และเด็กสูงไม่เกิน 130 เซนติเมตร ราคา 249 บาท) ทานได้ 1 ชั่วโมง 30 นาที
+    <br /><b>เวลาเปิด-ปิด :</b> เปิดบริการทุกวันเวลา 17.00-23.00 น. (เปิดบริการทั้งหมด 3 รอบ ได้แก่ รอบแรกเวลา 17.30-19.00 น., รอบที่สอง เวลา 19.30-21.00 น. และรอบสุดท้าย เวลา 21.00-22.30 น.)
+    <br /><b>ที่อยู่ : ซอยรามคำแหง 127 ถนนรามคำแหง แขวงหัวหมาก เขตบางกะปิ กรุงเทพฯ
+    <br /><b>เบอร์โทรศัพท์ :</b> 089 - 668 8821 (จองได้ตั้งแต่เวลา 10.00-15.00 น.)
+    <br /><b>Facebook :</b> &lt;a href="https://www.facebook.com/mr.seafood127/"target="_blank"&gt;Mr. Seafood
+  
+
+<hr />
+
+  
+  <div class="col-md-4" style="background-color:lavender;">
+    <hr />
+    <div class="well well-lg">
+    <center><p><i class="fa fa-3x fa-map-marker"></i> Map</p></center>
+
+    <hr />
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124003.95862634537!2d100.59286092112747!3d13.771412596193455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6181b73c2799%3A0xbfe3e3887f8134d1!2z4Lio4Li54LiZ4Lii4LmM4Lit4Liy4Lir4Liy4Lij4Lij4Liy4LihIDEyNw!5e0!3m2!1sth!2sth!4v1453024976296" width="300" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+</b></div></p></div></div></div>
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2016</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+
+            <!-- Script to Activate the Carousel -->
+              <script>
+                $('.carousel').carousel({
+                interval: 5000 //changes the speed
+              })
+              </script>
+
+
+  </body>
+
+</html>

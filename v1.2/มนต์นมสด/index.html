@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <title>มนต์นมสด</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="ข้อมูลทั่วไป">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="พระบรมมหาราชวัง">พระบรมมหาราชวัง</a>
+                          </li>
+                          <li>
+                              <a href="ตลาดนัดสวนจตุจักร">ตลาดนัดสวนจตุจักร</a>
+                          </li>
+                          <li>
+                              <a href="พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ">พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ</a>
+                          </li>
+                          <li>
+                              <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร">วัดอรุณราชวราราม ราชวรมหาวิหาร</a>
+                          </li>
+                          <li>
+                              <a href="สวนสัตว์ดุสิตเขาดินวนา">สวนสัตว์ดุสิตเขาดินวนา</a>
+                            </li>
+                          <li>
+                              <a href="สวนลุมพินี">สวนลุมพินี</a>
+                          </li>
+                          <li>
+                              <a href="วัดพระศรีรัตนศาสดาราม">วัดพระศรีรัตนศาสดาราม</a>
+                          </li>
+                          <li>
+                              <a href="เอ็มบีเคเซ็นเตอร์">เอ็มบีเคเซ็นเตอร์</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Chocolate Ville">Chocolate Ville</a>
+                            </li>
+                            <li>
+                                <a href="Grill101">Grill101 - Urban Grill & Bar</a>
+                            </li>
+                            <li>
+                                <a href="วัฒนาพานิช">วัฒนาพานิช ก๋วยเตี๋ยวเนื้อ</a>
+                            </li>
+                            <li>
+                                <a href="Mr. Seafood">Mr. Seafood</a>
+                            </li>
+                            <li>
+                                <a href="มนต์นมสด">มนต์นมสด</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="โรงแรมแชงกรี-ลา กรุงเทพ">โรงแรมแชงกรี-ลา กรุงเทพ</a>
+                            </li>
+                            <li>
+                                <a href="โรงแรมใบหยก สกาย">โรงแรมใบหยก สกาย</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+<div class="col-lg-12">
+<h1 class="page-header"> มนต์นมสด
+  <small>by <a href="#"> Sir'Poom</a>
+  </small>
+</h1>
+<ol class="breadcrumb">
+  <li><a href="index.html">Home</a>
+  </li>
+  <li class="active">มนต์นมสด</li>
+</ol>
+</div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+
+<!-- Blog Post Content Column -->
+<div class="col-md-8" style="background-color:lavender;">
+
+<!-- Blog Post -->
+
+<hr />
+
+<!-- Date/Time -->
+<p><i class="fa fa-clock-o"></i> Posted on 17 มกราคม 2559 at 15:51 </p>
+
+<hr />
+
+<!-- Preview Image -->
+<center>
+<img src="https://lh3.googleusercontent.com/-oqMAzk2NGxE/VBM_2qRY9dI/AAAAAAAAJcA/TJGKmIKUj6o/w1200-h800-no/MON1110.jpg" class="img-thumbnail" alt="Cinque Terre" width="640" height="480" />
+</center>
+
+<hr />
+
+<!-- Post Content -->
+<h2>รายละเอียดสถานที่ท่องเที่ยว</h2>
+<p class="lead">
+<div class="well well-lg">
+    <b>มนต์นมสด</b> ตำนานความอร่อยของร้านขนมปัง-นมสด เปิดให้บริการมาแล้วกว่า 50 ปี ตัวร้านออกแบบด้วยสีขาว โดดเด่นด้วยโลโก้สีแดง ตกแต่งโดยรอบร้านให้ร่มรื่น พร้อมด้วยเมนูของหวานที่คัดสรรมาเป็นอย่างดี ด้วยรสชาติของนมสด ทั้งร้อนและเย็นที่อร่อยเข้มข้น เข้ากันเป็นอย่างดีกับขนมปังนุ่ม ๆ โดยมีเมนูแนะนำ ได้แก่ ขนมปังเนยสด, ขนมปังปิ้งเนย-น้ำตาล, ขนมปังสังขยา, นมสด, โอเลี้ยง, ชา, นมแดง, โอวัลติน, โกโก้, กาแฟมีทั้งแบบร้อนและเย็น, ชามะนาว, น้ำมะนาว เป็นต้น นอกจากจะบริการที่ร้านแล้ว ยังมีบริการซื้อกลับบ้านด้วย
+    <br />
+    <br /><b>ในกรุงเทพมหานครมีทั้งหมด 3 สาขา คือ</b>
+    <br /><b> - สาขาหน้าศาลาว่าการ กทม. :</b> เปิดบริการทุกวันเวลา 14.00-23.00 น. <b>ที่อยู่:</b> 160/1-3 ถนนดินสอ ตำบลเสาชิงช้า อำเภอพระนคร กรุงเทพฯ <b>โทรศัพท์</b> 0 2224 1147
+    <br /><b> - สาขาอิสรภาพ :</b> เปิดบริการทุกวันเวลา 12.00-21.00 น. <b>ที่อยู่:</b> 2/9 ถ.อิสรภาพ ในเขตกองทัพเรือวังนันทอุทยานแขวงบ้านช่างหล่อ เขตบางกอกน้อย กรุงเทพฯ <b>โทรศัพท์</b> 0 2866 2821
+    <br /><b> - สาขามาบุญครอง ชั้น 2 :</b> เปิดบริการทุกวันเวลา 11.00-21.00 น. <b>ที่อยู่:</b> อยู่ฝั่งโรงแรมปทุมวันปริ้นเซส อาคารมาบุญครองเซ็นเตอร์ ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพฯ <b>โทรศัพท์</b> 0 2611 4898
+    <br /><b>เว็บไซต์ :</b> &lt;a href="http://www.mont-nomsod.com/"target="_blank"&gt;http://www.mont-nomsod.com/
+  </div>
+
+<hr />
+
+  
+  <div class="col-md-4" style="background-color:lavender;">
+    <hr />
+    <div class="well well-lg">
+    <center><p><i class="fa fa-3x fa-map-marker"></i> Map</p></center>
+
+    <hr />
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124014.74424270848!2d100.480013!3d13.751065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9910eb022aab563!2z4Lih4LiZ4LiV4LmM4LiZ4Lih4Liq4LiU!5e0!3m2!1sth!2sus!4v1453021616486" width="300" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.708348411841!2d100.465554!3d13.753099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64dc36d6dd9d481e!2z4Lih4LiZ4LiV4LmM4LiZ4Lih4Liq4LiUIOC4quC4suC4guC4suC4reC4tOC4quC4o-C4oOC4suC4niAoTW9udCBOb21zb2QgSXNhcmFwaGFiKQ!5e0!3m2!1sth!2sus!4v1453021680943" width="300" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.276806360993!2d100.530041!3d13.744512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2992d3500e419%3A0xbb82852c9d6f1d43!2z4Lij4LmJ4Liy4LiZ4Lih4LiZ4LiV4LmM4LiZ4Lih4Liq4LiUIOC4quC4suC4guC4suC4oeC4suC4muC4uOC4jeC4hOC4o-C4reC4hw!5e0!3m2!1sth!2sus!4v1453021765075" width="300" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+</p></div></div></div>
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2016</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+
+            <!-- Script to Activate the Carousel -->
+              <script>
+                $('.carousel').carousel({
+                interval: 5000 //changes the speed
+              })
+              </script>
+
+
+  </body>
+
+</html>

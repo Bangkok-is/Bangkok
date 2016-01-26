@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <title>สถานที่น่าเที่ยวในกรุงเทพมหานคร</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="ข้อมูลทั่วไป">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="พระบรมมหาราชวัง">พระบรมมหาราชวัง</a>
+                          </li>
+                          <li>
+                              <a href="ตลาดนัดสวนจตุจักร">ตลาดนัดสวนจตุจักร</a>
+                          </li>
+                          <li>
+                              <a href="พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ">พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ</a>
+                          </li>
+                          <li>
+                              <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร">วัดอรุณราชวราราม ราชวรมหาวิหาร</a>
+                          </li>
+                          <li>
+                              <a href="สวนสัตว์ดุสิตเขาดินวนา">สวนสัตว์ดุสิตเขาดินวนา</a>
+                            </li>
+                          <li>
+                              <a href="สวนลุมพินี">สวนลุมพินี</a>
+                          </li>
+                          <li>
+                              <a href="วัดพระศรีรัตนศาสดาราม">วัดพระศรีรัตนศาสดาราม</a>
+                          </li>
+                          <li>
+                              <a href="เอ็มบีเคเซ็นเตอร์">เอ็มบีเคเซ็นเตอร์</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Chocolate Ville">Chocolate Ville</a>
+                            </li>
+                            <li>
+                                <a href="Grill101">Grill101 - Urban Grill & Bar</a>
+                            </li>
+                            <li>
+                                <a href="วัฒนาพานิช">วัฒนาพานิช ก๋วยเตี๋ยวเนื้อ</a>
+                            </li>
+                            <li>
+                                <a href="Mr. Seafood">Mr. Seafood</a>
+                            </li>
+                            <li>
+                                <a href="มนต์นมสด">มนต์นมสด</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="โรงแรมแชงกรี-ลา กรุงเทพ">โรงแรมแชงกรี-ลา กรุงเทพ</a>
+                            </li>
+                            <li>
+                                <a href="โรงแรมใบหยก สกาย">โรงแรมใบหยก สกาย</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('http://bangkok.peninsula.com/en/~/media/Images/Bangkok/Leaderboard/pbk-Landing-Leaderboard-1280.ashx?mw=1280');"></div>
+            <div class="carousel-caption">
+                <h2></h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('http://wallpapersdesk.net/wp-content/uploads/2015/08/3765_bangkok.jpg');"></div>
+            <div class="carousel-caption">
+                <h2></h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('http://welovethai.land/wp-content/uploads/2014/09/9-MBK-Bangkok.jpg');"></div>
+            <div class="carousel-caption" >
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</header>
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Welcome to Bangkok
+            </h1>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-star"></i> วัดอรุณราชวราราม</h4>
+                </div>
+                <div class="panel-body">
+                    <p>หรือที่นิยมเรียกกันในภาษาพูดว่า วัดแจ้ง หรือที่เรียกสั้น ๆ ว่า วัดอรุณ เป็นวัดโบราณ สร้างในสมัยอยุธยา ว่ากันว่าเดิมเรียกว่า วัดมะกอก และกลายเป็นวัดมะกอกนอกในเวลาต่อมา</p>
+                    <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร.html" class="btn btn-default">อ่านต่อ...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-star"></i> วัดพระศรีรัตนศาสดาราม</h4>
+                </div>
+                <div class="panel-body">
+                    <p> หรือที่เรียกกันทั่วไปว่า วัดพระแก้ว เป็นวัดที่ พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราชโปรดเกล้าฯ ให้สร้างขึ้นใน พ.ศ. 2325 เป็นวัดในพระบรมมหาราชวัง เช่นเดียวกับ วัดพระศรีสรรเพชญ์ ซึ่งเป็นวัดในพระราชวังหลวงในสมัยอยุธยา และมีพระราชประสงค์ให้วัดพระศรีรัตนศาสดารามเป็นที่ประดิษฐาน พระพุทธมหามณีรัตนปฏิมากร หรือพระแก้วมรกต ที่นำมาจากกรุงเวียงจันทน์ และเป็นสถานที่ทรงบำเพ็ญพระราชกุศล วัดพระศรีรัตนศาสดารามเป็นวัดที่ไม่มีพระสงฆ์จำพรรษาอยู่ เพราะมีแต่ส่วนพุทธาวาสไม่มีส่วนสังฆาวาส</p>
+                    <a href="วัดพระศรีรัตนศาสดาราม.html" class="btn btn-default">อ่านต่อ...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-star"></i> เอ็มบีเคเซ็นเตอร์ (MBK Center)</h4>
+                </div>
+                <div class="panel-body">
+                    <p>หรือชื่อเดิมว่า ศูนย์การค้ามาบุญครอง เป็นศูนย์การค้าขนาดใหญ่ในกรุงเทพมหานคร ในปัจจุบันเป็นที่รู้จักในด้านตลาดการซื้อขายโทรศัพท์มือถือ ซึ่งอยู่ในบริเวณชั้น 4 แทนที่ร้านขายอาหาร และซูเปอร์มาร์เก็ตเดิม</p>
+                    <a href="เอ็มบีเคเซ็นเตอร์.html" class="btn btn-default">อ่านต่อ...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Features Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">About Bangkok</h1>
+        </div>
+        <div class="col-md-6">
+            <p>
+              <font size="4.5"><b>"กรุงเทพมหานคร"</b></font>
+              <font size="4">เป็นเมืองหลวงและนครที่มีประชากรมากที่สุดของประเทศไทย เป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคาร การพาณิชย์ การสื่อสาร และความเจริญของประเทศ เป็นเมืองที่มีชื่อยาวที่สุดในโลก ตั้งอยู่บนสามเหลี่ยมปากแม่น้ำเจ้าพระยา มีแม่น้ำเจ้าพระยาไหลผ่านและแบ่งเมืองออกเป็น 2 ฝั่ง คือ ฝั่งพระนครและฝั่งธนบุรี โดยกรุงเทพมหานครมีพื้นที่ทั้งหมด 1,568.737 ตารางกิโลเมตร มีประชากรตามทะเบียนราษฎรกว่าห้าล้านคน ทำให้กรุงเทพมหานครเป็นเอกนครและศูนย์ชุมชนอื่นของประเทศไทยด้อยความสำคัญลง มีผู้กล่าวว่า กรุงเทพมหานครเป็น "เอกนครที่สุดในโลก" เพราะมีประชากรมากกว่านครที่มีประชากรมากเป็นอันดับสองถึงสี่สิบเท่า</font>
+            </p>
+          </font>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="https://bangkokooh.files.wordpress.com/2012/07/forum2.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2016</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+
+            <!-- Script to Activate the Carousel -->
+              <script>
+                $('.carousel').carousel({
+                interval: 5000 //changes the speed
+              })
+              </script>
+
+
+  </body>
+
+</html>
