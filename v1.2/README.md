@@ -1,2 +1,0 @@
-# Bangkok
-introduction to Bangkok
