@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>สถานที่น่าเที่ยวในกรุงเทพมหานคร</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+    <style>
+    @font-face {
+    font-family: 'Kanit', sans-serif;
+    src: url(sansation_light.woff);
+    font-size: '16px';
+    font-weight: bold;
+    }
+
+    div {
+    font-family: 'Kanit', sans-serif;
+    }
+    </style>
+
+    <!-- map -->
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+    <style type="text/css">
+      #mapDiv {
+        min-height: 100px;
+        max-height: 1000px;
+      }
+    </style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">กรุงเทพมหานคร</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="index.html">หน้าหลัก</a>
+                  </li>
+                  <li>
+                      <a href="ข้อมูลทั่วไป.html">ข้อมูลทั่วไป</a>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                            <a href="พระบรมมหาราชวัง.html">พระบรมมหาราชวัง</a>
+                        </li>
+                        <li>
+                            <a href="ตลาดนัดสวนจตุจักร.html">ตลาดนัดสวนจตุจักร</a>
+                        </li>
+                        <li>
+                            <a href="พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ.html">พิพิธภัณฑ์หุ่นขี้ผึ้งมาดามทุสโซ</a>
+                        </li>
+                        <li>
+                            <a href="วัดอรุณราชวราราม ราชวรมหาวิหาร.html">วัดอรุณราชวราราม ราชวรมหาวิหาร</a>
+                        </li>
+                        <li>
+                            <a href="สวนสัตว์ดุสิตเขาดินวนา.html">สวนสัตว์ดุสิตเขาดินวนา</a>
+                          </li>
+                        <li>
+                            <a href="สวนลุมพินี.html">สวนลุมพินี</a>
+                        </li>
+                        <li>
+                            <a href="วัดพระศรีรัตนศาสดาราม.html">วัดพระศรีรัตนศาสดาราม</a>
+                        </li>
+                        <li>
+                            <a href="เอ็มบีเคเซ็นเตอร์.html">เอ็มบีเคเซ็นเตอร์</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="Chocolate Ville.html">Chocolate Ville</a>
+                          </li>
+                          <li>
+                              <a href="Grill101.html">Grill101 - Urban Grill & Bar</a>
+                          </li>
+                          <li>
+                              <a href="วัฒนาพานิช.html">วัฒนาพานิช ก๋วยเตี๋ยวเนื้อ</a>
+                          </li>
+                          <li>
+                              <a href="Mr. Seafood.html">Mr. Seafood</a>
+                          </li>
+                          <li>
+                              <a href="มนต์นมสด.html">มนต์นมสด</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="โรงแรมแชงกรี-ลา กรุงเทพ.html">โรงแรมแชงกรี-ลา กรุงเทพ</a>
+                          </li>
+                          <li>
+                              <a href="โรงแรมใบหยก สกาย.html">โรงแรมใบหยก สกาย</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+    <!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+<div class="col-lg-12">
+  <h1 class="page-header"> สวนสัตว์ดุสิตเขาดินวนา
+      <small>by <a href="#"> Knf</a>
+      </small>
+  </h1>
+  <ol class="breadcrumb">
+      <li><a href="index.html">Home</a>
+      </li>
+      <li class="active">สวนสัตว์ดุสิตเขาดินวนา</li>
+  </ol>
+</div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+
+<!-- Blog Post Content Column -->
+<div class="col-md-8" style="background-color:lavender;" >
+
+  <!-- Blog Post -->
+
+  <hr>
+
+  <!-- Date/Time -->
+  <p><i class="fa fa-clock-o"></i> Posted on 16 มกราคม 2559 at 17:23 </p>
+
+  <hr>
+
+  <!-- Preview Image -->
+  <center>
+    <img src="http://img.painaidii.com/images/20131226_3_1388040999_122165.jpg"
+    class="img-thumbnail" alt="Cinque Terre" width="640" height="480">
+  </center>
+
+  <hr>
+
+  <!-- Post Content -->
+  <h2>รายละเอียดสถานที่ท่องเที่ยว</h2>
+  <p class="lead">
+    <div class="well well-lg">
+      <b>สวนสัตว์ดุสิตเขาดินวนา หรือ เขาดิน</b> สวนสัตว์ยอดนิยมตลอดกาลตั้งอยู่ใจกลางกรุงเทพฯ ภายในประกอบไปด้วยสัตว์ป่า
+            นานาชนิตกว่า 1,000 ตัว พร้อมด้วยสภาพทางภูมิศาสตร์ที่ร่มรื่นเย็นสบายเหหมาะแก่การพักผ่อนเป็นอย่างมากถือเป็นสวนสัตว์แห่งแแรกของเมืองไทย
+            จัดตั้งขึ้นในปีพ.ศ.2481 ในราชสมัยของสมเด็จเจ้าอยู่หัวอานันทมหิดล โดยใช้พื้นที่พระราชอุทยานส่วนพระองศ์ในพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว
+            ปรับปรุงพื้นที่เพิ่มเติมและทรงพระราชทานกวางดาวสานพันธุ์ชวาพร้อมกับสัตว์อีก 2-3 ชนิด พร้อมทั้งพระราชทานนามว่า"สวนสัตว์ดุสิต"
+            <br><b>อ่านต่อได้ที่ :</b> <a href="http://www.painaidii.com/diary/diary-detail/001194/lang/th/"target="_blank">http://www.painaidii.com/diary/diary-detail/001194/lang/th/</a>
+            <br><b>การเดินทาง:</b> จากอนุสาวรีย์ชัยสมรภูมิไปทางถนนราชวิถีผ่านแยกตึกชัยให้ตรงต่อไปอีก 1 แยกและจะเจอกับสวนสัตว์
+            <br><b>วันเวลาเปิด - ปิด :</b>  08.00 - 18.00 น.
+      </div>
+
+  <hr>
+
+      </div>
+      <div class="col-md-4" style="background-color:lavender;">
+        <hr>
+        <div class="well well-lg">
+        <center><p><i class="fa fa-3x fa-map-marker"></i> Map</p></center>
+
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0780703407545!2d100.51526781524053!3d13.774165400484906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2995ab7d1d61b%3A0xd4d7412476b8b411!2z4Liq4Lin4LiZ4Liq4Lix4LiV4Lin4LmM4LiU4Li44Liq4Li04LiVIOC5gOC4guC4suC4lOC4tOC4meC4p-C4meC4sg!5e0!3m2!1sth!2sth!4v1452972604573" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- /.row -->
+<hr>
+
+<!-- Footer -->
+<footer>
+<div class="row">
+  <div class="col-lg-12">
+      <p>Copyright &copy; Your Website 2014</p>
+  </div>
+</div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
