@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Chocolate Ville
-permalink: /Chocolate Ville/
+permalink: /Chocolate-Ville/
 ---
 
 <!-- Page Content -->
@@ -46,7 +46,7 @@ permalink: /Chocolate Ville/
         <br><b>บริการ :</b> รับจัดเลี้ยงภายในร้าน , ห้องคาราโอเกะ , Wi-Fi , ห้อง VIP , ทีวี
         <br><b>ที่อยู่ :</b> ซอยนวมินทร์ 74 แยก 3-8 ถนนเกษตร-นวมินทร์ แขวงคลองกุ่ม เขตบึงกุ่ม กรุงเทพฯ
         <br><b>เบอร์โทรศัพท์ :</b> 083 - 077 3738
-        <br><b>อ่านต่อได้ที่ :</b> <a href="http://www.chillpainai.com/eat/691/"target="_blank">Chocolate Ville</a>
+        <br><b>อ่านต่อได้ที่ :</b> <a href="http://www.chillpainai.com/eat/691">Chocolate Ville</a>
     </div>
     <hr>
   </div>
@@ -56,8 +56,10 @@ permalink: /Chocolate Ville/
         <div class="well well-lg">
           <center><p><i class="fa fa-3x fa-map-marker"></i> Map</p></center>
           <hr>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.4723041137713!2d100.66146931424065!3d13.810654199649175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6252c6b33c83%3A0x356872e64eeaab7f!2sChocolate+Ville!5e0!3m2!1sth!2sth!4v1453019473649" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.4723041137713!2d100.66146931424065!3d13.810654199649175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6252c6b33c83%3A0x356872e64eeaab7f!2sChocolate+Ville!5e0!3m2!1sth!2sth!4v1453019473649" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
+<!-- /.row -->
+<hr>
