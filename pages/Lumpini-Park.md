@@ -32,7 +32,7 @@ permalink: /Lumpini-Park/
   <hr>
 <!-- Preview Image -->
   <center>
-    <img src="http://img.kapook.com/image/Travel_1/bangkok/l4.jpg"
+    <img src="http://xn--q3caoltku9fkz.sabuyblog.com/files/2012/07/621920-img-6.jpg"
     class="img-thumbnail" alt="Cinque Terre" width="640" height="480">
   </center>
   <hr>
